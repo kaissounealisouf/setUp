@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Three.js Background Example</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #canvas-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(95, 95, 99, 0.1);
+      background-image: linear-gradient(rgba(68, 76, 247, 0.1) 2px, transparent 2px),
+                        linear-gradient(90deg, rgba(68, 76, 247, 0.1) 2px, transparent 2px),
+                        linear-gradient(rgba(68, 76, 247, 0.1) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(78, 78, 90, 0.1) 1px, rgba(229, 229, 247, 0.1) 1px);
+      background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+      background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+      font-size: 1.1rem;
+      font-family: 'Patrick Hand', cursive;
+    }
+    .amercan_corner{
+        display: flex;
+        padding: 1em;
+        background-color:rgb(81, 85, 87);
+    }
+     .amercan_corner>div{
+        flex: 3;
+        color: #ffffff;
+
+     }
+
+     center{
+        position: absolute;
+     }
+
+     #myCanvas {
+        width: 6px;
+        height: 1px;
+        background-color: #ffffff;
+      }
+
+      #myCanvas::after {
+        content: "Thank you, USA government, for this wonderful adventure to invest oneself.and Big Appreciation to the USA government for providing this useful library.";
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        color: white;
+        position: absolute;
+        bottom: .00001px;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+      }
+  </style>
+
+<div class="amercan_corner">
+    <div>Empower </div>
+    <div>Yourself </div>
+    <div>At </div>
+    <div>American corner</div>
+</div>
+
+<div id="canvas-container"></div>
+<script   type="module" src="index.js">
+  
+</script>
+<div id="myCanvas"></div>
+
+ 
+</body>
+</html>
